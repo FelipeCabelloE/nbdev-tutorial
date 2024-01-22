@@ -13,11 +13,13 @@
 			"userUid": "1000",
 			"userGid": "1000",
 			"upgradePackages": "true"
+
 		},
 		"ghcr.io/rocker-org/devcontainer-features/quarto-cli:1": {}
 	},
 	// Use base images default CMD.
 	"overrideCommand": false,
+
 	// Forward Jupyter port locally, mark required.
 	"forwardPorts": [8888],
 	"portsAttributes": {
@@ -27,6 +29,7 @@
 			"onAutoForward": "ignore"
 		}
 	},
+	
 	// Configure tool-specific properties.
 	"customizations": {
 		// Configure properties specific to VS Code.
@@ -39,6 +42,7 @@
 			"extensions": ["ms-python.python", "ms-toolsai.jupyter"]
 		}
 	},
+	"onCreateCommand":"echo 'c.ServerApp.root_dir = \"/workspaces/nbdev-tutorial\"' >> /home/jovyan/.jupyter/jupyter_server_config.py",
 	// Use 'postCreateCommand' to run commands after the container is created.
 	"postCreateCommand": "pip3 install --user -r requirements.txt"
 
