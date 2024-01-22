@@ -1,0 +1,9 @@
+project:
+  output-dir: _docs
+
+website:
+  title: "nbdev-tutorial"
+  site-url: "https://FelipeCabelloE.github.io/nbdev-tutorial"
+  description: "a simple example of the nbdev walkthrough in codespaces"
+  repo-branch: main
+  repo-url: "https://github.com/FelipeCabelloE/nbdev-tutorial"
